@@ -460,12 +460,7 @@
                         <p class="text-max-800">For inrolling please fill the form our team will consult soon.</p>
                     </div>
                 </div>
-                <form action="submit.php" id="leverage-simple-form" class="leverage-simple-form">
-                    <input type="hidden" name="section" value="leverage_form">
-
-                    <input type="hidden" name="reCAPTCHA">
-                    <!-- Remove this field if you want to disable recaptcha -->
-
+                <form action="submit.php" method="post" id="leverage-simple-form" class="leverage-simple-form">
                     <div class="row form-group-margin">
                         <div class="col-12 col-md-6 m-0 p-2 input-group">
                             <input type="text" name="name" class="form-control field-name" placeholder="Name">
@@ -486,7 +481,7 @@
                             <span class="form-alert"></span>
                         </div>
                         <div class="col-12 input-group m-0 p-2">
-                            <a class="btn primary-button">SEND</a>
+                            <input type="submit" value="SEND" class="btn primary-button">
                         </div>
                     </div>
                 </form>
