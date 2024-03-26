@@ -460,22 +460,44 @@
                         <p class="text-max-800">For inrolling please fill the form our team will consult soon.</p>
                     </div>
                 </div>
-                <form action="submit.php" method="post" id="leverage-simple-form" class="leverage-simple-form">
+                <form action="submit.php" method="post" name="form1" onsubmit="return formValidation()">
                     <div class="row form-group-margin">
                         <div class="col-12 col-md-6 m-0 p-2 input-group">
-                            <input type="text" name="name" class="form-control field-name" placeholder="Name">
+                            <input type="text" name="name" id="name" class="form-control field-name" placeholder="Name" required>
                         </div>
                         <div class="col-12 col-md-6 m-0 p-2 input-group">
-                            <input type="email" name="email" class="form-control field-email" placeholder="Email">
+                            <input type="email" name="email" id="email" class="form-control field-email" placeholder="Email" required>
                         </div>
                         <div class="col-12 col-md-6 m-0 p-2 input-group">
-                            <input type="tel" name="phone" class="form-control field-phone" placeholder="Phone">
+                            <input type="tel" name="phone" id="phone" class="form-control field-phone" placeholder="Phone" required>
                         </div>
                         <div class="col-12 col-md-6 m-0 p-2 input-group">
-                            <input type="text" name="course" class="form-control field-phone" placeholder="Interest in course">
+                            <select class="form-control field-course" required>
+                                <option >Ethical hacking</option>
+                                <option >Hardware and networking</option>
+                                <option >Website Designing</option>
+                                <option >Bootstrap</option>
+                                <option >c language</option>
+                                <option >Python</option>
+                                <option >Graphic Designing</option>
+                                <option >Laravel</option>
+                                <option >PHP</option>
+                                <option >Mysql</option>
+                                <option >Database</option>
+                                <option >Photoshop</option>
+                                <option >Tally</option>
+                                <option >Mobile application Development</option>
+                                <option >Digital marketing</option>
+                                <option >c++</option>
+                                <option >Wordpress</option>
+                                <option >CCC/BCC</option>
+                                <option >MongoDB</option>
+                                <option >Java</option>
+                                <option >Advance Excel</option>
+                            </select>
                         </div>
                         <div class="col-12 m-0 p-2 input-group">
-                            <textarea name="message" class="form-control field-message" placeholder="Message"></textarea>
+                            <textarea name="message" id="msg" class="form-control field-message" placeholder="Message" required></textarea>
                         </div>
                         <div class="col-12 input-group m-0 p-2">
                             <input type="submit" value="SEND" class="btn primary-button text-light">
@@ -602,7 +624,7 @@
 
         </footer>
 <!-- 
-        <!-- #region Global ============================ -->
+        <!- #region Global ============================ -->
         <!-- Modal [responsive menu] -->
         <div id="menu" class="p-0 modal fade" role="dialog" aria-labelledby="menu" aria-hidden="true">
             <div class="modal-dialog modal-dialog-slideout" role="document">
@@ -654,7 +676,7 @@
         <!-- <script src="cookie-notice.js"></script> -->
         <script src="particles.js"></script>
         <script src="main.js"></script>
-
+            <script src="form.js"></script>
         <!-- #endregion Global ========================= -->
 
     </body>
