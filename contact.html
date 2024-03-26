@@ -241,173 +241,68 @@
 </section>
 
    <!-- Contact -->
-   <section id="contact" class="section-3 bg-light form">
-    <div class="container">
-        <form action="form.php" id="leverage-form" class="multi-step-form">
-            <input type="hidden" name="section" value="leverage_form">
-
-            <input type="hidden" name="reCAPTCHA">
-            <!-- Remove this field if you want to disable recaptcha -->
-
-            <div class="row">
-                <div class="col-12 col-md-6 align-self-start text-center text-md-left">
-
-                    <!-- Success Message -->
-                    <div class="row success message">
-                        <div class="col-12 p-0">
-                            <div class="wait">
-                                <div class="spinner-grow" role="status">
-                                    <span class="sr-only">Loading</span>
-                                </div>
-                                <h3 class="sending">SENDING</h3>
-                            </div>
-                            <div class="done">
-                                <i class="icon bigger icon-check"></i>
-                                <h3>Your message was sent successful. Thanks.</h3>						
-                                <a href="" class="btn mx-auto primary-button">
-                                    <i class="icon-refresh"></i>
-                                    REFRESH
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Steps Message -->
-                    <div class="row intro form-content">
-                        <div class="col-12 p-0">
-
-                            <!-- Step Title -->
-                            <div class="step-title">
-                                <h2 class="featured alt">Let's Talk?</h2>
-                                <p>Don't wait for tomorrow. Talk to us learn how to start your career</p>
-                            </div>
-
-                            <!-- Step Title -->
-                            <div class="step-title">
-                                <h2 class="featured alt">Almost There</h2>
-                                <p>We need some more important information to better understand how we can help you in the best possible way.</p>
-                            </div>
-
-                            <!-- Step Title -->
-                            <div class="step-title">
-                                <h2 class="featured alt">Are you Ready?</h2>
-                                <p>Tell us a little about your Interest in selected course</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Steps Group -->
-                    <div class="row text-center form-content">
-                        <div class="col-12 p-0">
-                            <ul class="progressbar">
-                                <li>Personal Details</li>
-                                <li>Course Details</li>
-                                <li>Message</li>
-                            </ul>
-
-                            <!-- Group 1 -->
-                            <fieldset class="step-group">
-                                <div class="row">
-                                    <div class="col-12 input-group p-0">
-                                        <input type="text" name="name" data-minlength="3" class="form-control field-name" placeholder="First Name">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 input-group p-0">
-                                        <input type="text" name="lname" data-minlength="3" class="form-control field-name" placeholder="Last Name">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 input-group p-0">
-                                        <input type="number" name="age" data-minlength="3" class="form-control field-age" placeholder="Age">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 input-group p-0">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="gender" id="inlineCheckbox1" value="option1">
-                                            <label class="form-check-label" for="inlineCheckbox1">Male</label>
-                                          </div>
-                                          <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="gender" id="inlineCheckbox2" value="option2">
-                                            <label class="form-check-label" for="inlineCheckbox2">Female</label>
-                                          </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 input-group p-0">
-                                        <input type="text" name="phone" data-minlength="3" class="form-control field-phone" placeholder="Phone">
-                                    </div>
-                                </div>
-                                <div class="col-12 input-group p-0">
-                                    <a class="step-next btn primary-button">NEXT<i class="fa fa-arrow-right mx-2"></i></a>
-                                </div>
-                            </fieldset>
-
-                            <!-- Group 2 -->
-                            <fieldset class="step-group">
-                                <div class="row">
-                                    <div class="col-12 input-group p-0">
-                                        <input type="text" name="course" data-minlength="3" class="form-control field-course" placeholder="Course name">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 input-group p-0">
-                                        <input type="text" name="education" data-minlength="3" class="form-control field-education" placeholder="Qualifications">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 input-group p-0">
-                                        <input type="text" name="address" data-minlength="3" class="form-control field-address" placeholder="Address">
-                                    </div>
-                                </div>
-                                <div class="col-12 input-group p-0 d-flex justify-content-between justify-content-md-start">
-                                    <a class="step-prev btn primary-button mr-4">PREV</a>
-                                    <a class="step-next btn primary-button">NEXT</a>
-                                </div>
-                            </fieldset>
-
-                            <!-- Group 3 -->
-                            <fieldset class="step-group">
-                                <div class="row">
-                                    <div class="col-12 input-group p-0">
-                                        <textarea name="message" data-minlength="3" class="form-control field-message" placeholder="Message" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12 input-group p-0 d-flex justify-content-between justify-content-md-start">
-                                    <a class="step-prev btn primary-button mr-4">PREV</a>
-                                    <a class="step-next btn primary-button">SEND</a>
-                                </div>
-                            </fieldset>
-                        </div>
-                    </div>
+   <section id="contact" class="section-6 form">
+    <div class="container smaller">
+        <div class="row text-center intro">
+            <div class="col-12">
+                <h2>Addmission Form</h2>
+                <p class="text-max-800">For inrolling please fill the form our team will consult soon.</p>
+            </div>
+        </div>
+        <form action="submit.php" method="post" onsubmit="return formValidation()">
+            <div class="row form-group-margin">
+                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                    <input type="text" name="name" class="form-control field-name" id="name" placeholder="Name" required>
                 </div>
-
-                <div class="content-images col-12 col-md-6 pl-md-5 d-none d-md-block">
-
-                    <!-- Step 1 -->
-                    <div class="">
-                        <a class="step-image">
-
-                            <!-- <div class="mask-radius"></div> -->
-                            <img src="5127314.jpg" class="fit-image" alt="Contact Us">
-                        </a>
-                    </div>
-                    <div class="">
-                        <a class="step-image">
-
-                            <!-- <div class="mask-radius"></div> -->
-                            <img src="5127314.jpg" class="fit-image" alt="Contact Us">
-                        </a>
-                    </div>
-                    <div class="">
-                        <a class="step-image">
-
-                            <!-- <div class="mask-radius"></div> -->
-                            <img src="5127314.jpg" class="fit-image" alt="Contact Us">
-                        </a>
-                    </div>
+                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                    <input type="text" name="Last" class="form-control field-email" id="lname" placeholder="Last name" required>
+                </div>
+                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                    <input type="text" name="fname" class="form-control field-email" id="fname" placeholder="Father's name" required>
+                </div>
+                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                    <input type="text" name="fname"  id="mname" class="form-control field-email" placeholder="Mother's name" required>
+                </div>
+                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                    <input type="email" name="email" class="form-control field-email" id="email" placeholder="Email" required>
+                </div>
+                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone:XXXXXXXXXX" class="form-control field-email" >
+                </div>
+                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                    <input type="date" id="age" name="age" class="form-control field-phone" placeholder="Age" required>
+                </div>
+                <div class="col-12 col-md-6 m-0 p-2 input-group">
+                    <select class="form-control field-course">
+                        <option disabled selected>Select course</option>
+                        <option >Ethical hacking</option>
+                        <option >Hardware and networking</option>
+                        <option >Website Designing</option>
+                        <option >Bootstrap</option>
+                        <option >c language</option>
+                        <option >Python</option>
+                        <option >Graphic Designing</option>
+                        <option >Laravel</option>
+                        <option >PHP</option>
+                        <option >Mysql</option>
+                        <option >Database</option>
+                        <option >Photoshop</option>
+                        <option >Tally</option>
+                        <option >Mobile application Development</option>
+                        <option >Digital marketing</option>
+                        <option >c++</option>
+                        <option >Wordpress</option>
+                        <option >CCC/BCC</option>
+                        <option >MongoDB</option>
+                        <option >Java</option>
+                        <option >Advance Excel</option>
+                    </select>
+                </div>
+                <div class="col-12 m-0 p-2 input-group">
+                    <textarea name="message" id="msg" class="form-control field-message" placeholder="Message" required></textarea>
+                </div>
+                <div class="col-12 input-group m-0 p-2">
+                    <input type="submit" value="Submit" class="btn primary-button text-light">
                 </div>
             </div>
         </form>
@@ -588,7 +483,8 @@
         <!-- <script src="js/cookie-notice.js"></script> -->
         <script src="particles.js"></script>
         <script src="main.js"></script>
-
+        <script src="form.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
         <!-- #endregion Global ========================= -->
 
     </body>
